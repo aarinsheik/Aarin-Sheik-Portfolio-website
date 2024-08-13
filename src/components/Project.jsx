@@ -1,25 +1,66 @@
 import React from 'react'
 import { PROFILE, PROJECTS } from '../constants'
+import { motion } from 'framer-motion'
 import Cards from './Cards'
+
+const containerVariants = {
+  hidden: { opacity:0 , y:-20 },
+  visible : {
+    opacity:1,
+    y:0,
+    transition:{
+      duration: 0.5,
+      staggerChildren: 0.15,
+    },
+  },
+}
+
+const itemVariants = {
+  hidden: {
+    opacity:0 ,
+    y:0.8 ,
+  },
+  visible:{
+    opacity:1 , 
+    scale:1 ,
+    transition:{
+      duration:0.5,
+    },
+  },
+}
 
 const Project = () => {
   return (
     <div id='project'>
-      <h2 className='mt-20 text-center text-4xl font-semibold'>Projects</h2>
-      <div className="flex flex-wrap justify-center py-8">
+      <motion.h2 
+      className='mt-20 text-center text-4xl font-semibold'
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible">
+        Projects
+      </motion.h2>
+      
+      <motion.div 
+      className="flex flex-wrap justify-center py-8"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+     >
 
         {PROJECTS.map((project , index)=>(
-            <div key={index}>
+            
+            <motion.div variants={itemVariants} key={index}>
                 <Cards
                     image={project.image}
                     title={project.title}
                     subtitle={project.subtitle}
                     link={project.link}
                 ></Cards>
-            </div>
+            </motion.div>
+
         ))}
 
-      </div>
+      </motion.div>
     </div>
   )
 }

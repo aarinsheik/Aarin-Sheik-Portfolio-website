@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import logo from "../assets/logo.png"
 import { NAVIGATION_LINKS } from '../constants';
 import { FaBars, FaTimes } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 
 const navbar = () => {
@@ -35,7 +36,12 @@ const navbar = () => {
     <div>
       <nav className='fixed left-0 right-0 top-4 z-50'>
         {/* destop Menu */}
-        <div className='mx-auto hidden max-w-2xl items-center justify-center rounded-lg bg-black/20 backdrop-blur-lg lg:flex'>
+        <motion.div 
+        className='mx-auto hidden max-w-2xl items-center justify-center rounded-lg bg-black/20 backdrop-blur-lg lg:flex'
+        initial={{opacity:0 , y:-50}}
+        animate={{opacity:1 , y:0 }}
+        transition={{duration:1 , delay:1 }}
+        >
           <div className="flex justify-between items-center gap-6">
             <div>
               <a>
@@ -56,7 +62,7 @@ const navbar = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* mobile menu */}
         <div className="rounded-lg backdrop-blur-md lg:hidden">
