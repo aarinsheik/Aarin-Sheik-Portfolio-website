@@ -4,6 +4,9 @@ import HeroSection from './components/HeroSection'
 import About from './components/About'
 import Project from './components/Project'
 import Skill from './components/skill'
+import Testimonials from './components/Testimonial'
+import Contact from './components/Contact'
+
 const App = () => {
   return (
     <main className='overflow-x-hidden bg-black tracking-tighter text-gray-200 antialiased'>
@@ -12,6 +15,8 @@ const App = () => {
       <About/>
       <Project/>
       <Skill/>
+      <Testimonials/>
+      <Contact/>
     </main>
   )
 }

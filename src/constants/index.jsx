@@ -8,11 +8,11 @@ import {
 } from "react-icons/fa6";
 
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
+import { PiTreeStructureFill } from "react-icons/pi";
 import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { SiKotlin } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
 
 import image1 from "../assets/project1.jpeg";
 import image2 from "../assets/project2.jpeg";
@@ -30,9 +30,8 @@ import user4 from "../assets/profile-pictures/user4.jpg";
 
 export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Award", href: "#award" },
+  { label: "Projects", href: "#project" },
+  { label: "Skills", href: "#skill" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
@@ -107,34 +106,34 @@ export const PROJECTS = [
 
 export const SKILLS = [
   {
+    icon: <PiTreeStructureFill className="text-4xl lg:text-6xl text-yellow-500" />,
+    name: "DSA",
+    experience: "experienced",
+  },
+  {
+    icon: <FaPython className="text-4xl lg:text-6xl text-yellow-300" />,
+    name: "Python",
+    experience: "Intermediate",
+  },
+  {
     icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-400" />,
     name: "React",
-    experience: "2+ years",
-  },
-  {
-    icon: <TbBrandNextjs className="text-4xl lg:text-6xl text-white" />,
-    name: "Next.js",
-    experience: "1+ year",
-  },
-  {
-    icon: <SiMongodb className="text-4xl lg:text-6xl text-green-600" />,
-    name: "MongoDB",
-    experience: "1.5+ years",
-  },
-  {
-    icon: <DiRedis className="text-4xl lg:text-6xl text-red-600" />,
-    name: "Redis",
-    experience: "1+ year",
+    experience: "Intermediate",
   },
   {
     icon: <FaNodeJs className="text-4xl lg:text-6xl text-green-600" />,
     name: "Node.js",
-    experience: "2+ years",
+    experience: "beginner",
   },
   {
-    icon: <BiLogoPostgresql className="text-4xl lg:text-6xl text-sky-700" />,
-    name: "PostgreSQL",
-    experience: "1+ year",
+    icon: <SiMongodb className="text-4xl lg:text-6xl text-green-600" />,
+    name: "MongoDB",
+    experience: "beginner",
+  },
+  {
+    icon: <SiKotlin className="text-4xl py-2 lg:text-6xl text-purple-600" />,
+    name: "Kotlin",
+    experience: "beginner",
   },
 ];
 
