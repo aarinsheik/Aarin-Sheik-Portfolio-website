@@ -90,15 +90,24 @@ const navbar = () => {
         </div>
         
         { isMobView && (
-          <ul className='ml-4 mt-4 flex-col gap-4 backdrop-blur-md'>
+          <ul className='ml-4 mt-2 flex-col gap-4 backdrop-blur-md'>
             {NAVIGATION_LINKS.map((items , index)=>(
-              <li key={index}>
+              
+              <motion.li 
+              key={index}
+              whileHover={{
+                x: [0, -1, 1, -0.5, 0.5, 0],
+                transition: { duration: 0.5, repeat: 1 }
+              }}>
+
                 <a className='block w-full text-xl font-semibold' 
                   href={items.href}
                   onClick={(e)=>handleLinkClick(e , items.href)}  >
                     {items.label}
                   </a>
-              </li>
+
+              </motion.li>
+
             ))}
           </ul>
         ) }

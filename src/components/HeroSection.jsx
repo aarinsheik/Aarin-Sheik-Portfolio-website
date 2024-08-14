@@ -28,7 +28,7 @@ const HeroSection = () => {
       animate={{opacity:1}}
       transition={{duration:1 , delay:1 }}>
 
-        <h1 className='text-5xl font-semibold uppercase tracking-wide md:text-7xl'>
+        <h1 className='text-5xl font-semibold uppercase tracking-wide md:text-7xl hover:scale-x-110 transition duration-500'>
           {PROFILE.name}
         </h1>
         <p className='pt-2 font-semibold'>{PROFILE.info}</p>
