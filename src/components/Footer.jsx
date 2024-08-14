@@ -30,7 +30,12 @@ const Footer = () => {
                  target='_blank'
                  initial={{ opacity:0 }}
                  whileInView={{ opacity:1}}
-                 transition={{duration:0.2 , delay:0.2*index}}>
+                 transition={{duration:0.2 , delay:0.2*index}}
+                 whileHover={{
+                    x: [0, -2, 2, -2, 2, 0],
+                    transition: { duration: 0.5, repeat: 1 }
+                  }}
+                  >
                     {link.icon}
                 </motion.a>
             ))}

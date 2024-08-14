@@ -51,13 +51,20 @@ const navbar = () => {
             <div>
               <ul className='flex item-center gap-4'>
                 {NAVIGATION_LINKS.map((items , index)=>(
-                  <li key={index}>
+
+                  <motion.li 
+                  key={index}
+                  whileHover={{
+                    x: [0, -1, 1, -0.5, 0.5, 0],
+                    transition: { duration: 0.5, repeat: 1 }
+                  }}>
                     <a className='hover:text-yellow-400' 
                       href={items.href}
                       onClick={(e)=>handleLinkClick(e , items.href)}  >
                         {items.label}
                       </a>
-                  </li>
+                  </motion.li>
+
                 ))}
               </ul>
             </div>
