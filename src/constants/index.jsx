@@ -1,11 +1,12 @@
 import {
-  FaXTwitter,
   FaGithub,
   FaLinkedin,
   FaFacebook,
   FaDiscord,
   FaInstagram,
 } from "react-icons/fa6";
+
+import { SiGeeksforgeeks } from "react-icons/si";
 
 import { RiReactjsLine } from "react-icons/ri";
 import { PiTreeStructureFill } from "react-icons/pi";
@@ -14,7 +15,7 @@ import { FaNodeJs } from "react-icons/fa";
 import { SiKotlin } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 
-import image1 from "../assets/project1.jpeg";
+import post_it_prj from "../assets/post_it_prj.png";
 import image2 from "../assets/project2.jpeg";
 import image3 from "../assets/project3.jpeg";
 import image4 from "../assets/project4.jpeg";
@@ -23,10 +24,9 @@ import image6 from "../assets/project6.jpeg";
 import image7 from "../assets/project7.jpeg";
 import image8 from "../assets/project8.jpeg";
 
-import user1 from "../assets/profile-pictures/user1.jpg";
-import user2 from "../assets/profile-pictures/user2.jpg";
-import user3 from "../assets/profile-pictures/user3.jpg";
-import user4 from "../assets/profile-pictures/user4.jpg";
+import abhinav_img from "../assets/profile-pictures/abhinav_img.jpg";
+import athul_img from "../assets/profile-pictures/athul_img.png";
+
 
 export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
@@ -50,11 +50,11 @@ export const ABOUT = {
 
 export const PROJECTS = [
   {
-    title: "E-commerce Platform",
+    title: "Post-it",
     subtitle:
-      "A full-stack e-commerce platform built with React, Node.js, and MongoDB.",
-    image: image1,
-    link: '#'
+      "A full-stack  A Social-Media web-App built with React.js, Node.js, Express.js and MongoDB.",
+    image: post_it_prj,
+    link: 'https://post-it-psk3.onrender.com/'
   },
   {
     title: "Social Media App",
@@ -137,67 +137,56 @@ export const SKILLS = [
   },
 ];
 
-export const ACHIEVEMENT = {
-  title: "International Hackaton - Tokyo",
-  award: "Gold Medalist - 2024",
-  description:
-    "Winner of the 2024 Algo coding representing the University of Oxford. This achievement showcases exceptional problem-solving skills and dedication. The event provided a platform to innovate and collaborate with the brightest minds, resulting in a prestigious accolade.",
-};
-
 export const TESTIMONIALS = [
   {
-    name: "Emily Johnson",
-    title: "CEO, Tech Innovators",
-    quote:
-      "Working with Robert has been an incredible experience. His design sensibilities and technical expertise are top-notch, making him a valuable asset to any project.",
-    image: user1,
+    name: "Dr. H S Guruprasad",
+    title: " Ph.D.,  Professor at BMSCE.",
+    quote: "Aarin Sheik is an outstanding computer science student with strong problem-solving skills and deep knowledge. His curiosity and passion drive him to excel and explore beyond the curriculum",
+    image: "https://webcampus.bmsce.in/assets/faculty/IS/Dr_H_S_Guruprasad.JPG",
   },
   {
-    name: "Michael Lee",
-    title: "CTO, Creative Minds",
-    quote:
-      "Robert consistently delivers high-quality work, combining creativity and technical prowess. His ability to solve complex problems with elegant solutions is truly impressive.",
-    image: user2,
+    name: "Dr. P Jayarekha",
+    title: "Ph.D., Professor & HOD of ISE-dept at BMSCE  ",
+    quote: "Aarin Sheik consistently delivers high-quality work, combining creativity and technical prowess. His ability to solve complex problems with elegant solutions is truly impressive.",
+    image: "https://webcampus.bmsce.in/assets/faculty/IS/Dr_Jayarekha_P_.JPG",
   },
   {
-    name: "Sophia Martinez",
-    title: "Lead Developer, Digital Solutions",
-    quote:
-      "Robert's dedication to his craft is evident in every project he undertakes. His innovative approach and attention to detail set him apart as a leading designer and developer.",
-    image: user3,
+    name: "Abhinav N B",
+    title: "fullstack Developer, CSE student at NIE,mysuru ",
+    quote: "Aarin is incredibly talented in both frontend and backend development. He's always quick to learn new concepts, and his code is consistently solid. He's going to be a fantastic developer!",
+    image: abhinav_img,
   },
   {
-    name: "Daniel Thompson",
-    title: "Project Manager, InnovateX",
-    quote:
-      "Robert's ability to understand client needs and translate them into beautiful, functional designs is remarkable. He is a true professional who always exceeds expectations.",
-    image: user4,
+    name: "Athul I kumar",
+    title: "Pre-final year student in the ISE-dept at BMSCE",
+    quote: "Aarin shows amazing dedication and discipline in his studies. His commitment to mastering every detail and staying focused is truly inspiring. He’s always on top of his work, no matter what!",
+    image: athul_img,
   },
 ];
 
 export const SOCIAL_MEDIA_LINKS = [
   {
-    href: "https://x.com/",
-    icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
+    href: "https://github.com/aarinsheik",
+    icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://x.com/",
+    href: "https://www.linkedin.com/in/aarin-sheik-28136b227/",
+    icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
+  },
+  {
+    href: "https://www.geeksforgeeks.org/user/aarinsheikm/",
+    icon: <SiGeeksforgeeks fontSize={25} className="hover:opacity-80" />,
+  },
+  {
+    href: "https://discordapp.com/users/aarin_sheik.m",
     icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://x.com/",
+    href: "https://www.instagram.com/aarin_sheik/",
     icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
   },
   {
     href: "https://x.com/",
-    icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://github.com/",
-    icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
-  },
-  {
-    href: "https://www.linkedin.com/",
-    icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
+    icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
   },
 ];

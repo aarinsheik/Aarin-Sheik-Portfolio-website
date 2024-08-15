@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import {PROFILE} from '../constants'
-import profilePic from '../assets/robertButcher1.jpg'
+import profilePic from '../assets/aarin_sheik.jpeg'
 
 const HeroSection = () => {
   return (

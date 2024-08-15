@@ -9,8 +9,8 @@ const containerVariants = {
     opacity:1,
     y:0,
     transition:{
-      duration: 0.5,
-      staggerChildren: 0.15,
+      duration: 2,
+      staggerChildren: 0.3,
     },
   },
 }
@@ -24,7 +24,7 @@ const itemVariants = {
     opacity:1 , 
     scale:1 ,
     transition:{
-      duration:0.5,
+      duration:1,
     },
   },
 }
