@@ -15,14 +15,16 @@ import { FaNodeJs } from "react-icons/fa";
 import { SiKotlin } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 
-import post_it_prj from "../assets/post_it_prj.png";
-import image2 from "../assets/project2.jpeg";
-import image3 from "../assets/project3.jpeg";
-import image4 from "../assets/project4.jpeg";
-import image5 from "../assets/project5.jpeg";
-import image6 from "../assets/project6.jpeg";
-import image7 from "../assets/project7.jpeg";
-import image8 from "../assets/project8.jpeg";
+import post_it_prj from "../assets/project-images/post-it_prj.png";
+import job_lab_prj from "../assets/project-images/job-lab_prj.png";
+import ASAP_prj from "../assets/project-images/abalone-shell-age-prediction_prj.png";
+import fishyTalk_prj from "../assets/project-images/fishyTalk_prj.png";
+import BHPP_prj from "../assets/project-images/bengaluru_House_price_prediction_prj.png";
+import roadRun_prj from "../assets/project-images/roadRun_prj.png";
+import weather_app_prj from "../assets/project-images/weather_app_prj.png";
+import imageHub_prj from "../assets/project-images/imageHub_prj.png";
+import qr_generator_prj from "../assets/project-images/qr_generator_prj.png";
+
 
 import abhinav_img from "../assets/profile-pictures/abhinav_img.jpg";
 import athul_img from "../assets/profile-pictures/athul_img.png";
@@ -52,56 +54,64 @@ export const PROJECTS = [
   {
     title: "Post-it",
     subtitle:
-      "A full-stack  A Social-Media web-App built with React.js, Node.js, Express.js and MongoDB.",
+      "A full-stack A Social-Media web-App built with tailwindcss, React.js, Node.js, Express.js and MongoDB.",
     image: post_it_prj,
     link: 'https://post-it-psk3.onrender.com/'
   },
   {
-    title: "Social Media App",
+    title: "Job-Lab",
     subtitle:
-      "A social media application developed using Next.js and Firebase.",
-    image: image2,
-    link: '#'
+      "A job searching platform built with tailwindcss, react.js, Node.js, Express.js and MongoDB",
+    image: job_lab_prj,
+    link: 'https://github.com/aarinsheik/Job-Lab'
   },
   {
-    title: "Project Management Tool",
-    subtitle: "A project management tool built with Django and PostgreSQL.",
-    image: image3,
-    link: '#'
-  },
-  {
-    title: "Personal Portfolio",
+    title: "Abalone-shell Age predictor",
     subtitle:
-      "A personal portfolio website designed with HTML, CSS, and JavaScript.",
-    image: image4,
-    link: '#'
+      "This interactive website uses React.js and Tailwind for a responsive frontend, Flask for backend operations, and an ML model to predict abalone shell ages from user input, leveraging a Kaggle-trained dataset.",
+    image: ASAP_prj,
+    link: 'https://github.com/aarinsheik/Abalone-shell-age-prediction'
   },
   {
-    title: "Weather Dashboard",
+    title: "Bengaluru House Price prediction WebApp",
     subtitle:
-      "A weather dashboard application built with Vue.js and Express.js.",
-    image: image5,
-    link: '#'
+      "Our site predicts Bengaluru house prices using a Flask server and a Linear Regression model, trained on 13,000+ instances.",
+    image: BHPP_prj,
+    link: 'https://github.com/aarinsheik/Bengaluru-House_Price-Prediction'
   },
   {
-    title: "Blog Platform",
+    title: "FishyTalk Android App",
+    subtitle: "Fishy Talk is a chat app using Firebase Authentication, Database, and Storage for seamless sign-ups, chat storage, and profile pictures. Built with Android Studio XML and Kotlin.",
+    image: fishyTalk_prj,
+    link: 'https://github.com/aarinsheik/Fishy-Talk-ChatApp'
+  },
+  {
+    title: "RoadRun Android App",
     subtitle:
-      "A blogging platform developed with Ruby on Rails and PostgreSQL.",
-    image: image6,
-    link: '#'
+      "This app lets users check vehicle fines easily, with authenticated officers inputting details, using Firebase Database and Authentication.",
+    image: roadRun_prj,
+    link: 'https://github.com/aarinsheik/RoadRun-App'
   },
   {
-    title: "Fitness Tracker",
-    subtitle: "A fitness tracking app created using Flutter and Firebase.",
-    image: image7,
-    link: '#'
+    title: "Weather-App",
+    subtitle:
+      "Access real-time weather updates by city with our website, built using HTML, CSS, and JavaScript, and integrated with the Open Weather Map API.",
+    image: weather_app_prj,
+    link: 'https://weather-info-website-chi.vercel.app/'
   },
   {
-    title: "Recipe Finder",
-    subtitle: "A recipe finder application developed with Angular and Node.js.",
-    image: image8,
-    link: '#'
+    title: "QR Generator Web-App",
+    subtitle: "website offers a straightforward QR code generation tool, utilizing the GoQR API. It’s built with HTML, CSS, and JavaScript for a smooth and intuitive user experience",
+    image: qr_generator_prj,
+    link: 'https://qr-generator-website.vercel.app/'
   },
+  {
+    title: "ImageHub",
+    subtitle: "ImageHub is a dynamic image search engine using HTML, CSS, and JavaScript with the Unsplash API for stunning, copyright-free visuals.",
+    image: imageHub_prj,
+    link: 'https://image-hub-website.vercel.app/'
+  },
+  
 ];
 
 export const SKILLS = [
